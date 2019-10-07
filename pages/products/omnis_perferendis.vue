@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"omnis_perferendis","name":"Dolores cupiditate id nostrum.","description":"Dolore itaque consequatur. Illo nobis maxime. Reprehenderit et incidunt.","price":43254.13,"header":"Ut quam et commodi.","footer":"Consectetur delectus dolorum debitis.","moreInfo":"Quasi corporis odio sunt."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

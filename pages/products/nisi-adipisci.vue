@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"nisi-adipisci","name":"Harum corrupti qui minus.","description":"Officia non sapiente. Alias rerum velit. Quo dolorem deleniti.","price":31126.37,"header":"Minus aliquam et quos.","footer":"Qui at corporis aut.","moreInfo":"Qui illo soluta qui."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

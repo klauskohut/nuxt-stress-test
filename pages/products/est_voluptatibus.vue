@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"est_voluptatibus","name":"Ducimus placeat eos dolorem.","description":"Consectetur perspiciatis nulla. Voluptates molestias sunt. Tenetur qui sed.","price":55022.39,"header":"Qui corporis sint facere.","footer":"Molestiae sunt suscipit explicabo.","moreInfo":"Id voluptates rerum quo."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

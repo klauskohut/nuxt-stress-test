@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"eos-in","name":"Rerum dignissimos eius iure.","description":"Voluptatibus sit vel. Quia soluta quis. Eius asperiores corrupti.","price":20119.33,"header":"Dicta porro dolores ut.","footer":"Nemo et tempora dolorem.","moreInfo":"Quisquam quaerat et accusamus."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

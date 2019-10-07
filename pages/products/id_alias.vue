@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"id_alias","name":"Magnam eos mollitia asperiores.","description":"Amet voluptatem saepe. Aut consequatur qui. Dolore temporibus quos.","price":47257.12,"header":"Eveniet reprehenderit quia inventore.","footer":"Dignissimos quaerat fugiat eaque.","moreInfo":"Accusamus mollitia sint nam."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

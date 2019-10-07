@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"et-occaecati","name":"Consequatur est deserunt minus.","description":"Qui ullam repudiandae. Quis similique est. Hic delectus rerum.","price":49335.92,"header":"Quis aut rerum nesciunt.","footer":"Et vel dignissimos qui.","moreInfo":"Odit nulla possimus ducimus."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

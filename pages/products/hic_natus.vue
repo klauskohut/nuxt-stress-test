@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"hic_natus","name":"Sit commodi quos aut.","description":"Et laboriosam soluta. Adipisci aliquam velit. Cupiditate expedita voluptatem.","price":43834.76,"header":"Et quidem dicta nulla.","footer":"Porro voluptas placeat nesciunt.","moreInfo":"Explicabo corporis ducimus aliquam."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

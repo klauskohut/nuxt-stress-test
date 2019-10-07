@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"itaque-earum","name":"Officia minus tempora animi.","description":"Quos similique nisi. Iure quasi libero. Rerum minima tenetur.","price":90128.29,"header":"Totam dolorem iure magni.","footer":"Perferendis fugiat dolorem autem.","moreInfo":"Explicabo omnis pariatur sit."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"sed_quis","name":"Autem voluptatibus ut fugit.","description":"Ut delectus sit. Eum quam alias. Aut itaque iste.","price":74777.85,"header":"Eum hic est ut.","footer":"Nihil maxime doloremque earum.","moreInfo":"Rerum perspiciatis in ducimus."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>

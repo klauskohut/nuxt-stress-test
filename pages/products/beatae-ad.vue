@@ -1,0 +1,26 @@
+<template>
+  <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <h3>More product info below:</h3>
+    <p>{{moreInfo}}</p>
+  </Product>
+</template>
+
+<script>
+  import Product from '../product'
+  export default {
+    layout: 'product',
+    components: {
+      Product,
+    },
+    data() {
+      return {"slug":"beatae-ad","name":"Nostrum harum et consequatur.","description":"Molestiae voluptas debitis. Et in ex. Voluptas ut cumque.","price":73034.93,"header":"Reiciendis officia commodi corrupti.","footer":"Rem tempore neque totam.","moreInfo":"Dolore cupiditate non eius."}
+    }
+  }
+</script>
+
+<style scoped>
+  p {
+    font-size: 2em;
+    text-align: center;
+  }
+</style>
