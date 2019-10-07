@@ -1,7 +1,7 @@
 <template>
   <div>
-    <ul v-for="(path, index) in productsPath" :key="`id_${index}`">
-      <nuxt-link :to="path">{{path}}</nuxt-link>
+    <ul>
+      <li v-for="(path, index) in productsPath" :key="`id_${index}`"><nuxt-link :to="path">{{path}}</nuxt-link></li>
     </ul>
   </div>
 </template>

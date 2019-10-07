@@ -1,7 +1,7 @@
 {
-  "name": "nuxtjs-skeleton",
+  "name": "nuxt-stress-test",
   "version": "1.0.0",
-  "description": "NuxtJS Skeleton app ",
+  "description": "NuxtJS Stress Test",
   "author": "Klaus Kohut",
   "private": true,
   "scripts": {
