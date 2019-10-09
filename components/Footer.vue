@@ -1,7 +1,9 @@
 <template>
-  <h2>
-    Footer {{message}}
-  </h2>
+  <div>
+    <h2>
+      Footer {{message}}
+    </h2>
+  </div>
 </template>
 
 <script>

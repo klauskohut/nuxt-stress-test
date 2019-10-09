@@ -1,13 +1,15 @@
 <template>
   <section>
     <Header :message="header" />
-    <div>
+    <div class="container">
       <h1>{{ name }}</h1>
       <h2>{{ slug }}</h2>
       <p>{{ description }}</p>
       <strong>{{ price }}</strong>
     </div>
-    <slot />
+    <div class="container">
+      <slot />
+    </div>
     <Footer :message="footer" />
   </section>
 </template>
@@ -23,3 +25,11 @@
     }
   }
 </script>
+
+<style>
+  .container {
+    padding: 1em;
+    height: inherit;
+    width: inherit;
+  }
+</style>

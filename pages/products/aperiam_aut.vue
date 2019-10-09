@@ -1,5 +1,6 @@
 <template>
   <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <Slider />
     <h3>More product info below:</h3>
     <p>{{moreInfo}}</p>
   </Product>
@@ -7,10 +8,13 @@
 
 <script>
   import Product from '../product'
+  import Slider from '../../components/Slider'
+
   export default {
     layout: 'product',
     components: {
       Product,
+      Slider
     },
     data() {
       return {"slug":"aperiam_aut","name":"Atque vel qui cumque.","description":"Praesentium error est. Nulla eligendi error. Nemo ab non.","price":58737.03,"header":"Eos voluptate dolores omnis.","footer":"Recusandae perferendis ut impedit.","moreInfo":"Enim excepturi provident alias."}

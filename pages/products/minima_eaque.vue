@@ -1,5 +1,6 @@
 <template>
   <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <Slider />
     <h3>More product info below:</h3>
     <p>{{moreInfo}}</p>
   </Product>
@@ -7,10 +8,13 @@
 
 <script>
   import Product from '../product'
+  import Slider from '../../components/Slider'
+
   export default {
     layout: 'product',
     components: {
       Product,
+      Slider
     },
     data() {
       return {"slug":"minima_eaque","name":"Deserunt tempore autem accusantium.","description":"Ratione autem tenetur. Aperiam suscipit beatae. In et repellendus.","price":48283.89,"header":"Est voluptatem quidem et.","footer":"Distinctio repudiandae ea voluptatibus.","moreInfo":"Molestiae magnam esse error."}

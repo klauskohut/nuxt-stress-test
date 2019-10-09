@@ -1,5 +1,6 @@
 <template>
   <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <Slider />
     <h3>More product info below:</h3>
     <p>{{moreInfo}}</p>
   </Product>
@@ -7,10 +8,13 @@
 
 <script>
   import Product from '../product'
+  import Slider from '../../components/Slider'
+
   export default {
     layout: 'product',
     components: {
       Product,
+      Slider
     },
     data() {
       return {"slug":"quibusdam-animi","name":"Impedit nam et corrupti.","description":"Vel dolorum provident. Id in rem. Est omnis maiores.","price":68698.62,"header":"Blanditiis non reiciendis et.","footer":"Autem dicta error sunt.","moreInfo":"Repudiandae non consequatur fugit."}

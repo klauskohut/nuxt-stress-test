@@ -1,5 +1,6 @@
 <template>
   <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <Slider />
     <h3>More product info below:</h3>
     <p>{{moreInfo}}</p>
   </Product>
@@ -7,10 +8,13 @@
 
 <script>
   import Product from '../product'
+  import Slider from '../../components/Slider'
+
   export default {
     layout: 'product',
     components: {
       Product,
+      Slider
     },
     data() {
       return {"slug":"facere-enim","name":"Voluptas magni libero suscipit.","description":"Eius et cumque. Molestiae aut laboriosam. Tempora omnis ut.","price":72376.87,"header":"Est et officia et.","footer":"Laboriosam sapiente qui ut.","moreInfo":"Incidunt maxime debitis et."}

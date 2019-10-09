@@ -1,5 +1,6 @@
 <template>
   <Product :slug="slug" :name="name" :description="description" :price="price" :header="header" :footer="footer">
+    <Slider />
     <h3>More product info below:</h3>
     <p>{{moreInfo}}</p>
   </Product>
@@ -7,10 +8,13 @@
 
 <script>
   import Product from '../product'
+  import Slider from '../../components/Slider'
+
   export default {
     layout: 'product',
     components: {
       Product,
+      Slider
     },
     data() {
       return {"slug":"facilis-iusto","name":"Omnis laboriosam accusantium voluptatem.","description":"Nemo mollitia quis. Quam maxime et. Id dolores consequatur.","price":21512.26,"header":"Et eos dolorem ipsa.","footer":"Culpa quibusdam et et.","moreInfo":"Facilis consectetur quia aliquid."}
